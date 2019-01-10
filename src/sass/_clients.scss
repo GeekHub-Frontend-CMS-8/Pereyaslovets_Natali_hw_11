@@ -1,0 +1,14 @@
+.container-clients__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+.container-clients__item {
+  margin-right: 90px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

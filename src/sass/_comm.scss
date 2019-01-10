@@ -1,0 +1,49 @@
+.comm {
+  background: url("../img/comm-bg.png") no-repeat ;
+  padding: 75px 0 125px 0;
+}
+
+.container-comm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-comm__text {
+  color: #efefef;
+  font-family: "Crimson Text";
+  font-size: 20px;
+  font-style: italic;
+  padding-bottom: 65px;
+  width: 770px;
+  text-align: center;
+  line-height: 0;
+}
+
+.container-comm__name {
+  color: #e3e3e3;
+  font-family: $font-text;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.47px;
+  padding-bottom: 15px;
+}
+
+.container-comm__about {
+  color: #efefef;
+  font-family: "Crimson Text";
+  font-size: 14px;
+  font-style: italic;
+}
+
+.container-comm__ava {
+  padding-bottom: 55px;
+}
+
+.quotes {
+  color: #efefef;
+  font-family: "Crimson Text";
+  font-size: 93px;
+  font-style: italic;
+}
