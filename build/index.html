@@ -27,7 +27,7 @@
                     <span class="topnav__item topnav__item--middle"></span>
                     <span class="topnav__item topnav__item--bottom"></span>
                 </div>
-                <nav class="menu-list menu__menu-list">
+                <nav class="menu-list menu__menu-list" id="menu">
                     <ul class="menu-list__links">
                         <li class="menu-list__item"><a href="" class="link menu-list__link">Home</a></li>
                         <li class="menu-list__item"><a href="index2.html" class="link menu-list__link">About</a></li>
@@ -747,5 +747,15 @@ $(document).on('touchstart' && 'touchend', function (e) {
         $('.menu-list').removeClass('open');
     }
 });</script>
+<script>
+    $(document).ready(function(){
+        $("#menu").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    });
+</script>
 </body>
 </html>
