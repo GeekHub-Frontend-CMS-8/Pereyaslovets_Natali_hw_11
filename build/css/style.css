@@ -95,7 +95,7 @@ table {
 
 .header-logo__text {
   color: #757575;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 50px;
   text-transform: uppercase;
@@ -233,7 +233,7 @@ a {
     transition: .4s;
     background: none;
     color: #58595b;
-    font: 500 30px/85px "Lato", sans-serif; }
+    font: 500 30px/85px "Montserrat", sans-serif; }
   .menu-list__links {
     display: flex;
     width: 580px;
@@ -337,12 +337,12 @@ a {
     width: 45px; } }
 
 .hero {
-  background: url("../img/header-bg.png");
+  background: url("../img/header-bg.png") no-repeat center top/cover;
   text-align: center; }
 
 .slider-items__description {
   color: #ffffff;
-  font-family: 'Crimson Text - Roman', sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-size: 14px;
   line-height: 50px;
   letter-spacing: 1.4px;
@@ -361,7 +361,7 @@ h1 {
 .slider-item__btn {
   background: transparent;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   letter-spacing: 1.5px;
   border: 2px solid #f2f2f2;
@@ -383,7 +383,7 @@ h1 {
 h2 {
   text-align: center;
   color: #3e3d3d;
-  font-family: 'Amsdam';
+  font-family: 'Amsdam', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   padding-top: 60px;
@@ -391,7 +391,7 @@ h2 {
 
 .about-container__text {
   color: #3e3d3d;
-  font-family: 'Crimson Text - Roman';
+  font-family: "Crimson Text", sans-serif;
   font-size: 14px;
   padding: 0 70px 45px;
   line-height: 25px;
@@ -406,10 +406,10 @@ h2 {
 
 .about-container__btn {
   color: #3e3d3d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   background: transparent;
-  width: 135px;
+  width: 90px;
   padding: 15px 0;
   border: 2px solid #3e3d3d;
   margin-right: 5px; }
@@ -418,6 +418,10 @@ h2 {
   .about-container__btn:hover {
     color: #cecece;
     background-color: #3e3d3d; }
+
+@media screen and (min-width: 450px) {
+  .about-container__btn {
+    width: 135px; } }
 
 .about-container__image {
   width: 100%; }
@@ -436,19 +440,28 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap; } }
 
+@media screen and (min-width: 800px) {
+  .container-statistic__list {
+    flex-wrap: nowrap; } }
+
 .container-statistic__item {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 30px 90px;
+  padding: 30px 60px;
   border-bottom: 1px solid #b0b0b0; }
-  .container-statistic__item:last-child {
-    border-bottom: none; }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   .container-statistic__item {
     border-bottom: none;
+    padding: 50px 65px;
+    border-right: 1px solid #b0b0b0; }
+    .container-statistic__item:last-child {
+      border-right: none; } }
+
+@media screen and (min-width: 900px) {
+  .container-statistic__item {
     padding: 50px 90px;
     border-right: 1px solid #b0b0b0; }
     .container-statistic__item:last-child {
@@ -474,7 +487,7 @@ h2 {
   margin-bottom: 20px; }
 
 .services {
-  background: url("../img/serviсes-bg.png"); }
+  background: url("../img/serviсes-bg.png") no-repeat center top/cover; }
 
 .container-services__title {
   color: #ffffff;
@@ -482,7 +495,7 @@ h2 {
 
 .container-services__text {
   color: #cfcfcf;
-  font-family: "Crimson Text - Roman";
+  font-family: "Crimson Text", sans-serif;
   font-size: 14px;
   letter-spacing: 1.4px;
   text-align: center;
@@ -491,17 +504,27 @@ h2 {
 .container-services__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 85px; }
+
+@media screen and (min-width: 1000px) {
+  .container-services__list {
+    flex-wrap: nowrap; } }
 
 .container-services__item {
   border: 1px solid #fff;
   flex-basis: 25%;
-  margin-right: 30px;
+  margin-right: 10px;
   padding: 60px 30px 40px;
-  text-align: center; }
-  .container-services__item:last-child {
-    margin-right: 0; }
+  text-align: center;
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 1000px) {
+  .container-services__item {
+    margin-right: 30px; }
+    .container-services__item:last-child {
+      margin-right: 0; } }
 
 h3 {
   color: #d8d8d8;
@@ -516,7 +539,7 @@ h3 {
 
 .container-services__item--text {
   color: #d8d8d8;
-  font-family: "Crimson Text - Roman";
+  font-family: "Crimson Text", sans-serif;
   font-size: 14px;
   letter-spacing: 1.4px;
   line-height: 20.31px; }
@@ -525,7 +548,7 @@ h3 {
   background-color: #ededed; }
 
 .history-container__text {
-  width: 990px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   color: #3e3d3d;
@@ -533,6 +556,14 @@ h3 {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 1.4px; }
+
+@media screen and (min-width: 900px) {
+  .history-container__text {
+    width: 800px; } }
+
+@media screen and (min-width: 1000px) {
+  .history-container__text {
+    width: 990px; } }
 
 h4 {
   color: #3e3d3d;
@@ -700,18 +731,26 @@ h4 {
 
 /*===== // Resonsive Vertical Timeline =====*/
 .team {
-  background: url("../img/team-bg.png"); }
+  background: url("../img/team-bg.png") no-repeat center top/cover; }
 
 .container-team__text, .container-portfolio__text, .container-price__text, .container-blog__text, .container-clients__text {
-  width: 990px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   color: #3e3d3d;
-  font-family: "Crimson Text - Roman";
+  font-family: #3e3d3d;
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 1.4px;
   padding-bottom: 55px; }
+
+@media screen and (min-width: 900px) {
+  .container-team__text, .container-portfolio__text, .container-price__text, .container-blog__text, .container-clients__text {
+    width: 800px; } }
+
+@media screen and (min-width: 1000px) {
+  .container-team__text, .container-portfolio__text, .container-price__text, .container-blog__text, .container-clients__text {
+    width: 990px; } }
 
 .container-team__list {
   display: flex;
@@ -720,10 +759,17 @@ h4 {
   padding-bottom: 70px; }
 
 .container-team__item {
-  width: 270px;
+  width: 150px;
   margin-right: 30px; }
   .container-team__item:last-child {
     margin-right: 0; }
+
+@media screen and (min-width: 900px) {
+  .container-team__item {
+    width: 270px; } }
+
+.container-team__image {
+  width: 100%; }
 
 .container-portfolio__list {
   display: flex;
@@ -798,18 +844,34 @@ h4 {
 
 .container-price__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding-bottom: 90px; }
 
+@media screen and (min-width: 800px) {
+  .container-price__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+
 .container-price__item {
-  width: 370px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
   background: #fff;
   padding: 45px 70px 60px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 450px) {
+  .container-price__item {
+    width: 350px;
+    padding: 35px 70px 60px; } }
+
+@media screen and (min-width: 1000px) {
+  .container-price__item {
+    width: 370px;
+    padding: 45px 70px 60px; } }
 
 .container-price__item--name {
   color: #3e3d3d;
@@ -893,9 +955,13 @@ h4 {
 
 .container-looking {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   padding: 35px 0 40px; }
+
+@media screen and (min-width: 900px) {
+  .container-looking {
+    flex-direction: row; } }
 
 .container-looking__left {
   display: flex;
@@ -917,10 +983,15 @@ h4 {
 
 .container-looking__text {
   color: #888888;
-  font-family: 'Crimson Text';
+  font-family: "Crimson Text", sans-serif;
   font-size: 16px;
   font-style: italic;
-  line-height: 20px; }
+  line-height: 20px;
+  padding-bottom: 20px; }
+
+@media screen and (min-width: 900px) {
+  .container-looking__text {
+    padding-bottom: 0; } }
 
 .container-looking__btn {
   color: #e3e3e3;
@@ -942,8 +1013,12 @@ h4 {
   flex-wrap: wrap; }
 
 .container-blog__item, .container-blog__image {
-  flex-basis: 25%;
+  flex-basis: 50%;
   height: 412px; }
+
+@media screen and (min-width: 900px) {
+  .container-blog__item, .container-blog__image {
+    flex-basis: 25%; } }
 
 .container-blog__image img {
   width: 100%;
@@ -977,19 +1052,33 @@ h4 {
 
 .container-clients__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 130px; }
+  padding-bottom: 50px; }
+
+@media screen and (min-width: 600px) {
+  .container-clients__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 130px; } }
 
 .container-clients__item {
-  margin-right: 90px; }
-  .container-clients__item:last-child {
-    margin-right: 0; }
+  margin-bottom: 50px; }
+
+@media screen and (min-width: 600px) {
+  .container-clients__item {
+    margin-right: 90px; }
+    .container-clients__item:last-child {
+      margin-right: 0; } }
 
 .comm {
-  background: url("../img/comm-bg.png") no-repeat;
-  padding: 75px 0 125px 0; }
+  background: url("../img/comm-bg.png") no-repeat center top/cover;
+  padding: 50px 0; }
+
+@media screen and (min-width: 900px) {
+  .comm {
+    padding: 75px 0 125px 0; } }
 
 .container-comm {
   display: flex;
@@ -999,13 +1088,18 @@ h4 {
 
 .container-comm__text {
   color: #efefef;
-  font-family: "Crimson Text";
+  font-family: "Crimson Text", sans-serif;
   font-size: 20px;
   font-style: italic;
   padding-bottom: 65px;
-  width: 770px;
+  width: 100%;
   text-align: center;
-  line-height: 0; }
+  line-height: 30px; }
+
+@media screen and (min-width: 900px) {
+  .container-comm__text {
+    width: 770px;
+    line-height: 0; } }
 
 .container-comm__name {
   color: #e3e3e3;
@@ -1017,16 +1111,20 @@ h4 {
 
 .container-comm__about {
   color: #efefef;
-  font-family: "Crimson Text";
+  font-family: "Crimson Text", sans-serif;
   font-size: 14px;
   font-style: italic; }
 
 .container-comm__ava {
-  padding-bottom: 55px; }
+  padding-bottom: 20px; }
+
+@media screen and (min-width: 900px) {
+  .container-comm__ava {
+    padding-bottom: 55px; } }
 
 .quotes {
   color: #efefef;
-  font-family: "Crimson Text";
+  font-family: "Crimson Text", sans-serif;
   font-size: 93px;
   font-style: italic; }
 
@@ -1208,7 +1306,7 @@ footer {
   padding: 40px 0;
   text-align: left;
   color: #949494;
-  font-family: 'Crimson Text', sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-size: 14px;
   font-style: italic;
   letter-spacing: 1.4px;

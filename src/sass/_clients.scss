@@ -1,14 +1,29 @@
 .container-clients__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 130px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .container-clients__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 130px;
+  }
 }
 
 .container-clients__item {
-  margin-right: 90px;
-  &:last-child {
-    margin-right: 0;
+  margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 600px) {
+  .container-clients__item {
+    margin-right: 90px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

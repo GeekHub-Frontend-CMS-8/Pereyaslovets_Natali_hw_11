@@ -1,6 +1,12 @@
 .comm {
-  background: url("../img/comm-bg.png") no-repeat ;
-  padding: 75px 0 125px 0;
+  background: url("../img/comm-bg.png") no-repeat center top/cover;
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 900px) {
+  .comm {
+    padding: 75px 0 125px 0;
+  }
 }
 
 .container-comm {
@@ -12,13 +18,20 @@
 
 .container-comm__text {
   color: #efefef;
-  font-family: "Crimson Text";
+  font-family: $font-text-cr;
   font-size: 20px;
   font-style: italic;
   padding-bottom: 65px;
-  width: 770px;
+  width: 100%;
   text-align: center;
-  line-height: 0;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 900px) {
+  .container-comm__text {
+    width: 770px;
+    line-height: 0;
+  }
 }
 
 .container-comm__name {
@@ -32,18 +45,24 @@
 
 .container-comm__about {
   color: #efefef;
-  font-family: "Crimson Text";
+  font-family: $font-text-cr;
   font-size: 14px;
   font-style: italic;
 }
 
 .container-comm__ava {
-  padding-bottom: 55px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .container-comm__ava {
+    padding-bottom: 55px;
+  }
 }
 
 .quotes {
   color: #efefef;
-  font-family: "Crimson Text";
+  font-family: $font-text-cr;
   font-size: 93px;
   font-style: italic;
 }

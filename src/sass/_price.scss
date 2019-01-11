@@ -4,19 +4,41 @@
 
 .container-price__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding-bottom: 90px;
 }
 
+@media screen and (min-width: 800px) {
+  .container-price__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .container-price__item {
-  width: 370px;
-  margin: 0 auto;
+  width: 100%;
   text-align: center;
   background: #fff;
   padding: 45px 70px 60px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 450px) {
+  .container-price__item {
+    width: 350px;
+    padding: 35px 70px 60px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container-price__item {
+    width: 370px;
+    padding: 45px 70px 60px;
+  }
 }
 
 .container-price__item--name {
@@ -65,7 +87,7 @@
 }
 
 .container-price__item--usd {
-  color: #3e3d3d;
+  color: $color-text;
   font-family: $font-text;
   vertical-align: top;
   font-size: 28px;

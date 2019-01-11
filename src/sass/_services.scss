@@ -1,5 +1,5 @@
 .services {
- background: url("../img/serviсes-bg.png");
+ background: url("../img/serviсes-bg.png") no-repeat center top/cover;
 }
 
 .container-services__title {
@@ -9,7 +9,7 @@
 
 .container-services__text {
   color: #cfcfcf;
-  font-family: "Crimson Text - Roman";
+  font-family: $font-text-cr;
   font-size: 14px;
   letter-spacing: 1.4px;
   text-align: center;
@@ -19,18 +19,32 @@
 .container-services__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 85px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container-services__list {
+    flex-wrap: nowrap;
+  }
 }
 
 .container-services__item {
   border: 1px solid #fff;
   flex-basis: 25%;
-  margin-right: 30px;
+  margin-right: 10px;
   padding: 60px 30px 40px;
   text-align: center;
-  &:last-child {
-    margin-right: 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container-services__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -48,7 +62,7 @@ h3 {
 
 .container-services__item--text {
   color: #d8d8d8;
-  font-family: "Crimson Text - Roman";
+  font-family: $font-text-cr;
   font-size: 14px;
   letter-spacing: 1.4px;
   line-height: 20.31px;

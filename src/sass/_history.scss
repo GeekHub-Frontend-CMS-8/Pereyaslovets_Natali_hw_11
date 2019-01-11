@@ -3,7 +3,7 @@
 }
 
 .history-container__text {
-  width: 990px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   color: $color-text;
@@ -13,8 +13,20 @@
   letter-spacing: 1.4px;
 }
 
+@media screen and (min-width: 900px) {
+  .history-container__text {
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .history-container__text {
+    width: 990px;
+  }
+}
+
 h4 {
-  color: #3e3d3d;
+  color: $color-text;
   font-family: $font-text;
   font-size: 13px;
   text-transform: uppercase;

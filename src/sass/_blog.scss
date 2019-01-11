@@ -5,8 +5,14 @@
 }
 
 .container-blog__item, .container-blog__image {
-  flex-basis: 25%;
+  flex-basis: 50%;
   height: 412px;
+}
+
+@media screen and (min-width: 900px) {
+  .container-blog__item, .container-blog__image {
+    flex-basis: 25%;
+  }
 }
 
 .container-blog__image img {

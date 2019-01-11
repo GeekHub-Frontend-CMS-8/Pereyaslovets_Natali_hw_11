@@ -10,7 +10,7 @@
 h2 {
   text-align: center;
   color: #3e3d3d;
-  font-family: 'Amsdam';
+  font-family: 'Amsdam', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   padding-top: 60px;
@@ -19,7 +19,7 @@ h2 {
 
 .about-container__text {
   color: #3e3d3d;
-  font-family: 'Crimson Text - Roman';
+  font-family: $font-text-cr;
   font-size: 14px;
   padding: 0 70px 45px;
   line-height: 25px;
@@ -36,19 +36,25 @@ h2 {
 
 .about-container__btn {
   color: #3e3d3d;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-text;
   font-size: 13px;
   background: transparent;
-  width: 135px;
+  width: 90px;
   padding: 15px 0;
-  border: 2px solid #3e3d3d;
+  border: 2px solid $color-text;
   margin-right: 5px;
   &:last-child {
     margin-right: 0;
   }
   &:hover {
     color: #cecece;
-    background-color: #3e3d3d
+    background-color: $color-text
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .about-container__btn {
+    width: 135px;
   }
 }
 

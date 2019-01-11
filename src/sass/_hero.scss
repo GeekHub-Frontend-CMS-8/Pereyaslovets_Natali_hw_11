@@ -1,11 +1,11 @@
 .hero {
-  background: url("../img/header-bg.png");
+  background: url("../img/header-bg.png") no-repeat center top/cover;
   text-align: center;
 }
 
 .slider-items__description {
   color: #ffffff;
-  font-family: 'Crimson Text - Roman', sans-serif;
+  font-family: $font-text-cr;
   font-size: 14px;
   line-height: 50px;
   letter-spacing: 1.4px;
@@ -26,7 +26,7 @@ h1 {
 .slider-item__btn {
   background: transparent;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-text;
   font-size: 15px;
   letter-spacing: 1.5px;
   border: 2px solid #f2f2f2;
