@@ -55,22 +55,10 @@
         </div>
     </div>
 </header>
-<section class="hero">
-    <div class="wrap">
-        <div id="slider" class="slider">
-            <ol class="slider__indicators">
-                <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
-                <li class="slider__indicator" data-slide-to="1"></li>
-                <li class="slider__indicator" data-slide-to="2"></li>
-                <li class="slider__indicator" data-slide-to="3"></li>
-            </ol>
-        </div>
-    </div>
-</section>
 <section class="posts">
     <div class="wrap">
         <h1 class="hero-blog__title">
-            Blog with sidebar
+            Masonry blog
         </h1>
         <img src="img/white-wawe.png" alt="" class="hero-blog__wawe">
         <p class="hero-blog__url">
@@ -78,11 +66,10 @@
         </p>
     </div>
 </section>
-
 <section class="section-post">
     <div class="wrap">
         <ul class="grid effect-2" id="grid">
-            <li class="element-item masonry">
+            <li class="post-element masonry first">
                 <div>
                     <img src="img/masonry-1.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -110,7 +97,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-2.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -138,7 +125,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-3.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -166,7 +153,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-4.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -194,7 +181,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-5.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -222,7 +209,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-6.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -250,7 +237,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-7.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -278,7 +265,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-8.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -306,7 +293,7 @@
                     <button type="button" name="button" class="read-more">Read more</button>
                 </div>
             </li>
-            <li class="element-item masonry">
+            <li class="post-element__item masonry persent-width">
                 <div>
                     <img src="img/masonry-9.png" alt="" class="main-content__image">
                     <p class="main-content__title">
@@ -417,10 +404,7 @@
 <script src="https://tympanus.net/Development/GridLoadingEffects/js/AnimOnScroll.js"></script>
 <script>
     new AnimOnScroll( document.getElementById( 'grid' ), {
-        minDuration : 0.4,
-        maxDuration : 0.7,
-        viewportFactor : 0.2,
-        percentPosition: true
+        columnWidth: 350
     } );
 </script>
 <script>$(document).on('click', '#openMenu', function () {

@@ -1,10 +1,17 @@
 .container-portfolio__list {
   display: flex;
-  flex-direction: row;
-  width: 390px;
+  flex-direction: column;
+  width: 130px;
   justify-content: space-around;
   margin: 0 auto;
   padding-bottom: 65px;
+}
+
+@media screen and (min-width: 600px) {
+  .container-portfolio__list {
+    flex-direction: row;
+    width: 390px;
+  }
 }
 
 .container-portfolio__item {
@@ -16,58 +23,74 @@
   background: transparent;
   border: 2px solid #3e3d3d;
   padding: 10px 20px;
-  margin-right: 5px;
+  margin-bottom: 5px;
   &:hover {
     color: #fff;
     background-color: #3e3d3d;
   }
-  &:last-child {
-    margin-right: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .container-portfolio__item {
+    margin-right: 5px;
+    margin-bottom: 0;
+    &:hover {
+      color: #fff;
+      background-color: #3e3d3d;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
-.grid {
-  width: 69em;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
+.portfolio {
+  .grid {
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
-.grid li {
-  display: block;
-  float: left;
-  width: 25%;
-  opacity: 0;
+.portfolio {
+    .grid li {
+      display: block;
+      float: left;
+      width: 25%;
+      opacity: 0;
+    }
 }
 
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li {
-  opacity: 1;
-}
+  .grid li.shown,
+  .no-js .grid li,
+  .no-cssanimations .grid li {
+    opacity: 1;
+  }
 
-.grid li a,
-.grid li img {
-  outline: none;
-  border: none;
-  display: block;
-  max-width: 100%;
-}
+  .grid li a,
+  .grid li img {
+    outline: none;
+    border: none;
+    display: block;
+    max-width: 100%;
+  }
 
-/* Effect 2: Move Up */
+  /* Effect 2: Move Up */
 .grid.effect-2 li.animate {
-  -webkit-transform: translateY(200px);
-  transform: translateY(200px);
-  -webkit-animation: moveUp 0.65s ease forwards;
-  animation: moveUp 0.65s ease forwards;
-}
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    -webkit-animation: moveUp 0.65s ease forwards;
+    animation: moveUp 0.65s ease forwards;
+  }
 
-@-webkit-keyframes moveUp {
-  0% { }
-  100% { -webkit-transform: translateY(0); opacity: 1; }
-}
+  @-webkit-keyframes moveUp {
+    0% { }
+    100% { -webkit-transform: translateY(0); opacity: 1; }
+  }
 
-@keyframes moveUp {
-  0% { }
-  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
-}
+  @keyframes moveUp {
+    0% { }
+    100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+  }
+

@@ -34,7 +34,11 @@ a {
   color: #a4a4a4;
   &__icon {
     color: #a4a4a4;
+    &:hover {
+      -webkit-filter: opacity(30%);
+    }
   }
+
 }
 
 @media screen and (min-width: 900px) {
