@@ -1,20 +1,16 @@
+@import "../../node_modules/reset-css/sass/reset";
+
 * {
   box-sizing: border-box;
 }
 
-$color-text: #3e3d3d;
-$font-text: 'Montserrat', sans-serif;
-$font-text-cr: 'Crimson Text', sans-serif;
+$font-text: 'Open Sans', sans-serif;
+$font-roboto: 'Roboto Condensed', sans-serif;
 
 @mixin link-hover ($link-hover) {
   -webkit-transition: $link-hover;
   -o-transition: $link-hover;
   transition: $link-hover;
-}
-
-@font-face {
-  font-family: Amsdam;
-  src: url(../fonts/amsdam-regular.ttf);
 }
 
 .wrap {
@@ -42,31 +38,25 @@ $font-text-cr: 'Crimson Text', sans-serif;
 
 @media screen and (min-width: 1024px)  {
   .wrap {
-    width: 1000px;
+    width: 1020px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wrap {
-    width: 1170px;
+    width: 1140px;
   }
 }
 
-@import "../../node_modules/reset-css/sass/reset";
+
+
 @import "header";
+@import "menu";
 @import "hero";
-@import "section-about";
-@import "stat";
-@import "services";
-@import "history";
-@import "team";
-@import "portfolio";
-@import "price";
-@import "looking";
-@import "blog";
-@import "clients";
-@import "comm";
-@import "container-map";
-@import "contact";
 @import "footer";
-@import "blog-sidebar";
+@import "post";
+@import "informer";
+@import "partners";
+@import "comment";
+@import "form";
+@import "blog";
